@@ -31,17 +31,18 @@ nav{
     display: inline;
     color: white;
     font-size: 18pt;
-    padding-left: 70px;
-    padding-right: 70px ;
-    padding-top: 35px;
+    padding-left: 75px;
+    padding-right: 75px ;
+    padding-top: 175px;
     font-family: 'Monckeberg';
 }
 
 #mainNavImg{
     display: inline;
     left: 50%;
-    padding-left: 60px;
-    height: 100px;
+    padding-left: 5px;
+    padding-top: 50px;
+    height: 330px;
 }
 
 #homeSlogan {
@@ -73,7 +74,7 @@ nav{
 }
 
 .homeimgs{
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 7s;
     animation-iteration-count: 1;
 }
 
@@ -98,18 +99,65 @@ nav{
     float: right;
 }
 
+.mainInfo{
+    text-align: center;
+}
+
 #logo{
-    padding-left: 735px;
-    width: 475px;
+    width: 600px;
+    padding-left: 20px;
     margin: 0;
     padding-bottom: 0px;
 }
 
 #companyDescription{
-    padding-left: 718px;
+    display: inline-block;
+    width: 100%;
     font-size: 22pt;
     color: #E5383B;
     font-family: 'Monckeberg';
     margin: 0;
-    padding-bottom: 0px;
+    padding-bottom: 200px;
 }
+
+.foundersPic{
+    width: 700px;
+    float: right;
+    animation: 2s anim-lineUp ease-out;
+}
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+.aboutUs{
+    color:white;
+    font-size: 50pt;
+    padding-left: 50px;
+
+}
+
+#aboutDescription{
+    font-size: 28pt;
+    
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+
