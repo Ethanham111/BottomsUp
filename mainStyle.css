@@ -18,7 +18,7 @@ body{
     height: 100px;
     width: 100%;
     background-color: #0B090A;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center; 
 }
@@ -120,6 +120,59 @@ nav{
     padding-bottom: 200px;
 }
 
+#serviceHeader{
+    color:white;
+    font-size: 60pt;
+    padding-left: 20px;
+    text-align: center;
+}
+.servicesContainer{
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly; 
+    align-items: center; 
+}
+
+.serviceImg{
+    width: 100%;
+    height: 700px;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.servicesDivs{
+    position: relative;
+}
+
+.servicesDivs .overlay-box{    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10;
+    opacity:0;
+    transition: opacity 0.5s ease;
+    z-index: 1;     
+  }
+
+  .servicesDivs:hover .serviceImg {
+    opacity: 0.5;
+ }
+
+    .servicesDivs:hover .overlay-box {
+        opacity: 1;
+}
+
+ .serviceDescription{
+    background-color: #B1A7A6;
+    color:white;
+    font-size: 32pt;
+    font-family: 'Monckeberg';
+    padding-left: 10px;
+    text-align: center;
+ }
+
 .foundersPic{
     width: 700px;
     float: right;
@@ -156,8 +209,4 @@ nav{
     
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 50% }
-  }
 
