@@ -126,6 +126,13 @@ nav{
     padding-left: 20px;
     text-align: center;
 }
+
+#servicesParagraph{
+    color: white;
+    text-align: center;
+    font-size: 24pt;
+}
+
 .servicesContainer{
     display: flex;
     flex-direction: row ;
@@ -173,9 +180,23 @@ nav{
     text-align: center;
  }
 
+ .aboutUsHeader{
+    color:white;
+    font-size: 60pt;
+    text-align: center;
+    padding-top: 150px;
+
+}
+
+.aboutSection{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+
 .foundersPic{
-    width: 700px;
-    float: right;
+    width: 650px;
+    order: 1;
     animation: 2s anim-lineUp ease-out;
 }
 
@@ -197,16 +218,14 @@ nav{
     }
   }
 
-.aboutUs{
-    color:white;
-    font-size: 50pt;
-    padding-left: 50px;
-
-}
-
 #aboutDescription{
     font-size: 28pt;
-    
+    color: white;
+    padding-top: 100px;
 }
 
+.contactsSection{
+    display: flex;
+    gap: 10px;
+}
 
