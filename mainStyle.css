@@ -121,7 +121,7 @@ nav{
 }
 
 #serviceHeader{
-    color:white;
+    color:#DBDADA;
     font-size: 60pt;
     padding-left: 20px;
     text-align: center;
@@ -145,6 +145,10 @@ nav{
     height: 700px;
     opacity: 1;
     transition: .5s ease;
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    border-width: 5;
 }
 
 .servicesDivs{
@@ -180,11 +184,13 @@ nav{
     text-align: center;
  }
 
+
  .aboutUsHeader{
-    color:white;
+    color:#DBDADA;
     font-size: 60pt;
-    text-align: center;
+    padding-left: 490px;
     padding-top: 150px;
+    margin-bottom: 0;
 
 }
 
@@ -192,7 +198,9 @@ nav{
     display: flex;
     gap: 20px;
     text-align: center;
+    margin-bottom: 150px;
 }
+
 
 .foundersPic{
     width: 650px;
@@ -224,8 +232,35 @@ nav{
     padding-top: 100px;
 }
 
-.contactsSection{
-    display: flex;
-    gap: 10px;
+.contactHeader{
+    color:#DBDADA;
+    text-align: center;
+    font-size: 60pt;
 }
 
+
+.contactsSection{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.emailDiv{
+    background-color: #353232;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.callDiv{
+    background-color: #353232;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
