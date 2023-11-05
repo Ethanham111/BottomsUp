@@ -247,6 +247,7 @@ nav{
     color: white;
     text-align: center;
     font-size: 18pt;
+    margin-bottom: 10px;
 }
 
 .emailDiv{
@@ -264,3 +265,30 @@ nav{
     border-color: black;
     border-width: 5px;
 }
+
+#instaPhoto{
+    width: 160px;
+    padding-left: 15px;
+}
+
+.socialDiv{
+    background-color: #353232;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0B090A;
+    color: white;
+    font-family: 'Monckeberg';
+  }
+
+  #websiteDev{
+    text-align: end;
+    padding-right: 10px;
+  }
