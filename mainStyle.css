@@ -1,3 +1,15 @@
+.hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s, transform 0.9s;
+}  
+
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 @font-face {
     font-family: 'Monckeberg';
     src: local('Monckeberg Regular'), local('Monckeberg-Regular'),
@@ -11,7 +23,8 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#161A1D;
+    background: rgb(57,52,52);
+    background: linear-gradient(90deg, rgba(57,52,52,1) 0%, rgba(22,26,29,1) 100%);
 }
 
 .header{
@@ -31,18 +44,20 @@ nav{
     display: inline;
     color: white;
     font-size: 18pt;
-    padding-left: 75px;
-    padding-right: 75px ;
-    padding-top: 175px;
+    padding-left: 85px;
+    padding-right: 85px ;
+    padding-top: 85px;
     font-family: 'Monckeberg';
 }
+
+
 
 #mainNavImg{
     display: inline;
     left: 50%;
-    padding-left: 5px;
-    padding-top: 50px;
-    height: 330px;
+    padding-left: 55px;
+    padding-top: 45px;
+    height: 150px;
 }
 
 #homeSlogan {
@@ -104,7 +119,7 @@ nav{
 }
 
 #logo{
-    width: 600px;
+    width: 500px;
     padding-left: 20px;
     margin: 0;
     padding-bottom: 0px;
@@ -153,19 +168,23 @@ nav{
 
 .servicesDivs{
     position: relative;
+    overflow: hidden;
 }
 
 .servicesDivs .overlay-box{    
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
     right: 0;
     text-align: center;
-    padding: 10;
+    padding: 20;
     opacity:0;
     transition: opacity 0.5s ease;
-    z-index: 1;     
+    z-index: 1;
+    border-radius: 40px;
+    overflow: hidden;
   }
+  
 
   .servicesDivs:hover .serviceImg {
     opacity: 0.5;
@@ -198,7 +217,7 @@ nav{
     display: flex;
     gap: 20px;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 400px;
 }
 
 
@@ -236,6 +255,7 @@ nav{
     color:#DBDADA;
     text-align: center;
     font-size: 60pt;
+    padding-left: 40px;
 }
 
 
@@ -247,7 +267,8 @@ nav{
     color: white;
     text-align: center;
     font-size: 18pt;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
+    padding-left: 50px;
 }
 
 .emailDiv{

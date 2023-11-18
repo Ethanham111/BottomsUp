@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mainStyle.css">
+    <script defer src ="script.js"></script>
     <title>Bottoms Up</title>
 </head>
 <body>
     <div class="header">
         <nav class="navBar">
-            <a class="navElement" id="homeNav"> Home </a>
-            <a class="navElement" id="servicesNav"> Services </a>
-            <img id="mainNavImg" src="./Images/BOTTOMS_UP_clear.png" alt="Main Logo">
-            <a class="navElement" id="aboutNav"> About </a>
-            <a class="navElement" id="contactNav"> Contact </a>
+            <a class="navElement" id="homeNav" href="#homeSection"> Home </a>
+            <a class="navElement" id="servicesNav" href="#servicesSection"> Services </a>
+            <img id="mainNavImg" src="./Images/BOTTOMS UP OG.png" alt="Main Logo">
+            <a class="navElement" id="aboutNav" href="#aboutSection"> About </a>
+            <a class="navElement" id="contactNav" href="#contactsSection">Contact</a>> Contact </a>
         </nav>
     </div>
 
-    <div class="HomeSection">
+    <div class="HomeSection" id="homeSection">
         <img class="homeimgs" id="homeimg1" src="/Images/pexels-dmitry-zvolskiy-1721939.jpg" alt="Drinks Lined up on Bar">
         <img class="homeimgs" id="homeimg2" src="./Images/pexels-arina-krasnikova-7376892.jpg" alt="Backyard Display of Drinks">
         <span id="homeSlogan"> Sip, Savor, Celebrate!</span>
     </div>
 
     <div class="mainInfo">
-        <img id="logo" src="./Images/clearLogoBottomsUp.png" alt="Logo">
+        <img id="logo" src="./Images/BOTTOMS UP OG.png" alt="Logo">
         <span id="companyDescription"> Weddings|Parties|Corporate </span>
     </div>
 
-    <h2 id="serviceHeader"> Our Services </h2>
-    <p id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events, from casual gatherings to formal affairs. 
+    <h2 class="hidden" id="serviceHeader"> Our Services </h2>
+    <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
         Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and stylish bar setup that caters to your specific event needs. </p>
 
     <div class="servicesContainer">
@@ -50,7 +51,7 @@
     </div>
 
 
-    <h2 class="aboutUsHeader"> About us </h2>
+    <h2 class="aboutUsHeader" id="aboutSection"> About us </h2>
     <div class="aboutSection">
         <div ></div>
         <img class="foundersPic" src="./Images/IMG_3112.png" alt="Picture of the Founders">
@@ -62,8 +63,8 @@
         </p> 
     </div>
 
-    <h2 class="contactHeader"> Contact us for Inquries  </h2>
-    <div class="contactsSection">
+    <h2 class="contactHeader"> Contact Information</h2>
+    <div class="contactsSection" id="contactsSection">
         <div class="callDiv">
             <img src="./Images/call.png" alt="Phone icon">
             <h2 class="callUs"> Call us</h2>
