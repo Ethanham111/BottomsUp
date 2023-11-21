@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mainStyle.css">
-    <script defer src ="script.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <title>Bottoms Up</title>
 </head>
+
 <body>
     <div class="header">
         <nav class="navBar">
@@ -14,35 +19,64 @@
             <a class="navElement" id="servicesNav" href="#servicesSection"> Services </a>
             <img id="mainNavImg" src="./Images/BOTTOMS UP OG.png" alt="Main Logo">
             <a class="navElement" id="aboutNav" href="#aboutSection"> About </a>
-            <a class="navElement" id="contactNav" href="#contactsSection">Contact</a>> Contact </a>
+            <a class="navElement" id="contactNav" href="#contactsSection"> Contact </a>
         </nav>
     </div>
 
     <div class="HomeSection" id="homeSection">
-        <img class="homeimgs" id="homeimg1" src="/Images/pexels-dmitry-zvolskiy-1721939.jpg" alt="Drinks Lined up on Bar">
-        <img class="homeimgs" id="homeimg2" src="./Images/pexels-arina-krasnikova-7376892.jpg" alt="Backyard Display of Drinks">
+        <img class="homeimgs" id="homeimg1" src="/Images/pexels-dmitry-zvolskiy-1721939.jpg"
+            alt="Drinks Lined up on Bar">
+        <img class="homeimgs" id="homeimg2" src="./Images/pexels-arina-krasnikova-7376892.jpg"
+            alt="Backyard Display of Drinks">
         <span id="homeSlogan"> Sip, Savor, Celebrate!</span>
     </div>
 
     <div class="mainInfo">
-        <img id="logo" src="./Images/BOTTOMS UP OG.png" alt="Logo">
-        <span id="companyDescription"> Weddings|Parties|Corporate </span>
+        <div class="Testimonals">
+            <p id="testHeader">Testimonals </p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <p>"Best bar service. Recommended !!!!!"</p>
+                        <p class="testimonial-author">-Naomi</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"BEST BAR SERVICE EVER!!! Your team went above and beyond to ensure that my engagement party
+                            was a blast!"</p>
+                        <p class="testimonial-author"> -Sabrina</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p>"Used bottoms up bar service for my birthday party. They made amazing cocktails and were
+                            super professional."</p>
+                        <p class="testimonial-author"> -Alicia</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
-    <h2 class="hidden" id="serviceHeader"> Our Services </h2>
+    <div id="servicesSection"></div>
+    <h2 class="hidden" id="serviceHeader" > Services </h2>
     <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
-        Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and stylish bar setup that caters to your specific event needs. </p>
+        Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and
+        stylish bar setup that caters to your specific event needs. </p>
 
     <div class="servicesContainer">
         <div class="servicesDivs" id="formalDiv">
-            <img class="serviceImg" src="./Images/20230618_190624.jpg" alt="Indoor venue with made cocktails on display">
+            <img class="serviceImg" src="./Images/20230618_190624.jpg"
+                alt="Indoor venue with made cocktails on display">
             <div class="overlay-box">
                 <div class="serviceDescription"> Formal Events </div>
             </div>
         </div>
 
-        <div class="servicesDivs" id="casualDiv"> 
-            <img class="serviceImg" src="./Images/20230904_184048.jpg" alt ="Outdoor venue with mojito pitcher on display">
+        <div class="servicesDivs" id="casualDiv">
+            <img class="serviceImg" src="./Images/20230904_184048.jpg"
+                alt="Outdoor venue with mojito pitcher on display">
             <div class="overlay-box">
                 <div class="serviceDescription"> Casual Events </div>
             </div>
@@ -50,17 +84,15 @@
 
     </div>
 
-
-    <h2 class="aboutUsHeader" id="aboutSection"> About us </h2>
+    <h2 id="aboutSection" class="aboutUsHeader"> About us </h2>
     <div class="aboutSection">
-        <div ></div>
-        <img class="foundersPic" src="./Images/IMG_3112.png" alt="Picture of the Founders">
-        <p id="aboutDescription"> 
-            Welcome to Bottoms Up, where a passion for mixology runs in the family.
-            Following in the footsteps of our fathers, we are two cousins who created a unique bar experience by combining tradition with innovation. 
-            We ensure to provide guests with extraordinary cocktails and exceptional service. 
+        <img class="foundersPic" src="Images\IMG_3112.png" alt="Picture of the Founders">
+        <p id="aboutDescription">
+            Following in the footsteps of our fathers, we are two cousins who created a unique bar experience by
+            combining tradition with innovation.
+            We ensure to provide guests with extraordinary cocktails and exceptional service.
             Cheers to family, friends, and unforgettable events!
-        </p> 
+        </p>
     </div>
 
     <h2 class="contactHeader"> Contact Information</h2>
@@ -75,7 +107,7 @@
             <h2 class="emailUs"> Email us</h2>
             <a class="email"> mtlham45@gmail.com </a>
         </div>
-        <div class="socialDiv"> 
+        <div class="socialDiv">
             <img id='instaPhoto' src="./Images/instagram.png" alt="Phone icon">
             <h2 class="callUs">Instagram</h2>
             <a class="phoneNumber" href="https://www.instagram.com/bottomsupbar/"> @BottomsUp</a>
@@ -85,13 +117,14 @@
 
     <footer>
         <div id="Copyright">
-            <p> © 2023 Bottoms' up bar service. all rights reserved.</p>   
+            <p> © 2023 Bottoms' up bar service. all rights reserved.</p>
         </div>
-        <div id="websiteDev"> 
-            <p> Created by Ethan Hamburg </p> 
+        <div id="websiteDev">
+            <p> Created by Ethan Hamburg </p>
         </div>
     </footer>
 
-    
+
 </body>
+
 </html>

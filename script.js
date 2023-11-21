@@ -27,3 +27,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    var mySwiper = new Swiper('.swiper-container', {
+        loop: true, /* Enable looping */
+        slidesPerView: 'auto',
+        speed: 12500,
+        autoplay:{
+            delay: 0,
+            disableOnInteraction: false,
+        }
+    });
+});
+
