@@ -15,11 +15,12 @@
 <body>
     <div class="header">
         <nav class="navBar">
-            <a class="navElement" id="homeNav" href="#homeSection"> Home </a>
-            <a class="navElement" id="servicesNav" href="#servicesSection"> Services </a>
+            <a class="navElement" id="homeNav" href="#homeSection"> Home  <span class="red-bar"></span></a>
+            <a class="navElement" id="servicesNav" href="#servicesSection"> Services  <span class="red-bar"></span></a>
             <img id="mainNavImg" src="./Images/BOTTOMS UP OG.png" alt="Main Logo">
-            <a class="navElement" id="aboutNav" href="#aboutSection"> About </a>
-            <a class="navElement" id="contactNav" href="#contactsSection"> Contact </a>
+            <a class="navElement" id="aboutNav" href="#aboutSection"> About  <span class="red-bar"></span></a>
+            <a class="navElement" id="contactNav" href="#contactsSection"> Contact  <span class="red-bar"></span></a>
+            
         </nav>
     </div>
 
@@ -31,39 +32,16 @@
         <span id="homeSlogan"> Sip, Savor, Celebrate!</span>
     </div>
 
-    <div class="mainInfo">
-        <div class="Testimonals">
-            <p id="testHeader">Testimonals </p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-                        <p>"Best bar service. Recommended !!!!!"</p>
-                        <p class="testimonial-author">-Naomi</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <p>"BEST BAR SERVICE EVER!!! Your team went above and beyond to ensure that my engagement party
-                            was a blast!"</p>
-                        <p class="testimonial-author"> -Sabrina</p>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <p>"Used bottoms up bar service for my birthday party. They made amazing cocktails and were
-                            super professional."</p>
-                        <p class="testimonial-author"> -Alicia</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
+    <div class="services">
+        <img class="martini" src="Images\BOTTOMS UP Martini1.png" alt="Martini from logo">
+        <div id="servicesSection"></div>
+         <h2 class="hidden" id="serviceHeader" > Our Services </h2>
+         <p class="hidden" id="servicesItalics"> Professional Event Staffing and Mobile Bar Services </p>
+        <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
+            Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and
+        stylish bar setup that caters to your specific event needs. We ensure your event is not just an occasion but a lasting memory.</p>
     </div>
 
-    <div id="servicesSection"></div>
-    <h2 class="hidden" id="serviceHeader" > Services </h2>
-    <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
-        Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and
-        stylish bar setup that caters to your specific event needs. </p>
 
     <div class="servicesContainer">
         <div class="servicesDivs" id="formalDiv">
@@ -84,9 +62,36 @@
 
     </div>
 
+    <div class="TestimonalsContainer">
+        <div class="Testimonals">
+            <p id="testHeader">Testimonals </p>
+            <div class="swiper-container swiper-no-swiping">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <p>"Best bar service. Recommended !!!!!"</p>
+                        <p class="testimonial-author">-Naomi</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p>"BEST BAR SERVICE EVER!!! Your team went above and beyond to ensure that my engagement party
+                            was a blast!"</p>
+                        <p class="testimonial-author"> -Sabrina</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <p>"Used bottoms up bar service for my birthday party. They made amazing cocktails and were
+                            super professional."</p>
+                        <p class="testimonial-author"> -Alicia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <h2 id="aboutSection" class="aboutUsHeader"> About us </h2>
     <div class="aboutSection">
-        <img class="foundersPic" src="Images\IMG_3112.png" alt="Picture of the Founders">
+        <img class="foundersPic" src="Images\DSC06488.JPG" alt="Picture of the Founders">
         <p id="aboutDescription">
             Following in the footsteps of our fathers, we are two cousins who created a unique bar experience by
             combining tradition with innovation.
@@ -95,11 +100,11 @@
         </p>
     </div>
 
-    <h2 class="contactHeader"> Contact Information</h2>
+    <h2 id="contactHeader"> Contact Information </h2>
     <div class="contactsSection" id="contactsSection">
         <div class="callDiv">
             <img src="./Images/call.png" alt="Phone icon">
-            <h2 class="callUs"> Call us</h2>
+            <h2 class="callUs"> Call us </h2>
             <a class="phoneNumber"> 438-926-6733 </a>
         </div>
         <div class="emailDiv">

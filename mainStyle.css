@@ -38,34 +38,52 @@ body{
 }
 
 .header{
-    height: 100px;
+    height: 80px;
     width: 100%;
     background-color: #0B090A;
     display: flex;
-    justify-content: center;
-    align-items: center; 
 }
 
-nav{
+.navBar{
+    position: sticky;
     display: flex;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 .navElement{
-    display: inline;
     color: white;
     font-size: 18pt;
-    padding-left: 100px;
-    padding-right: 100px ;
-    padding-top: 105px;
+    padding-top: 5px;
     font-family: 'Monckeberg';
     text-decoration: none;
+    position: relative;
+    margin: 0 137px; /* Adjust the margin to add space between elements */
+}
+
+.red-bar {
+    position: absolute;
+    bottom: 0;
+    height: 4px; /* Adjust the height of the red bar */
+    background-color: red;
+    width: 0; /* Initial width is 0 */
+    transition: width 0.3s ease; /* Removed left property from transition */
+    left: 0; /* Start from the left edge of the anchor */
+}
+
+.navElement:hover .red-bar,
+.navElement.active .red-bar {
+    width: 100%; /* Expand the red bar to full width on hover or for the active link */
 }
 
 #mainNavImg{
     display: inline;
-    left: 50%;
-    padding-top: 50px;
-    height: 180px;
+    height: 150px;
+    padding-left: 70px;
+    padding-top: 30px;
 }
 
 #homeSlogan {
@@ -123,25 +141,34 @@ nav{
     float: right;
 }
 
-.mainInfo{
+.TestimonalsContainer{
     text-align: center;
-    padding-top: 700px; /* Adjust the value to add more space */
+    padding-top: 130px; /* Adjust the value to add more space */
     padding-bottom: 20px; /* Adjust the value to add more space */
 }
 
-#logo{
-    width: 500px;
-    padding-left: 20px;
-    margin: 0;
-    padding-bottom: 0px;
+.counterImg{
+    width: 50%;
 }
 
 #testHeader{
+    position: relative;
     color:#DBDADA;
-    font-size: 60pt;
-    padding-left: 20px;
+    font-size: 50pt;
     text-align: center;
     font-family: 'Monckeberg';
+}
+
+#testHeader::after{
+    content: "";
+    display: block;
+    width: 200px; /* Adjust the width of the bar */
+    height: 3px; /* Adjust the height and thickness of the bar */
+    background-color: #DBDADA; /* Adjust the color of the bar */
+    position: absolute;
+    bottom: -5px; /* Adjust the distance between the text and the bar */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .Testimonials {
@@ -172,19 +199,54 @@ nav{
     font-family: 'Monckeberg Light';
 }
 
+.servicesSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.martini{
+    width: 65px;
+    padding-top: 70px;
+    padding-left: 48.5%;
+}
+
 #serviceHeader{
+    position: relative;
     color:#DBDADA;
-    font-size: 60pt;
+    font-size: 50pt;
     padding-left: 20px;
     text-align: center;
     font-family: 'Monckeberg';
 }
 
-#servicesParagraph{
+#serviceHeader::after {
+    content: "";
+    display: block;
+    width: 200px; /* Adjust the width of the bar */
+    height: 3px; /* Adjust the height and thickness of the bar */
+    background-color: #DBDADA; /* Adjust the color of the bar */
+    position: absolute;
+    bottom: -5px; /* Adjust the distance between the text and the bar */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#servicesItalics{
     color: white;
     text-align: center;
     font-size: 24pt;
     font-family: 'Monckeberg Light';
+    font-style: italic;
+}
+
+#servicesParagraph{
+    color: white;
+    text-align: center;
+    font-size: 20pt;
+    font-family: 'Monckeberg Light';
+    max-width: 70%;
+    padding-left: 14%;
 }
 
 .servicesContainer{
@@ -234,62 +296,45 @@ nav{
 }
 
  .serviceDescription{
-    background-color: #B1A7A6;
     color:white;
     font-size: 32pt;
     font-family: 'Monckeberg';
     padding-left: 10px;
+    padding-bottom: 520px;
     text-align: center;
  }
 
 
  .aboutUsHeader{
     color:#DBDADA;
-    font-size: 60pt;
-    padding-left: 80px;
+    font-size: 50pt;
+    padding-left: 160px;
     padding-top: 150px;
     margin-bottom: 0;
     font-family: 'Monckeberg';
 
 }
 
+
 .aboutSection{
     display: flex;
     gap: 20px;
     text-align: left;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     font-family: 'Monckeberg Light';
 }
 
 
 .foundersPic{
-    width: 700px;
+    width: 550px;
     order: 1;
     padding-right: 100px;
-    animation: 2s anim-lineUp ease-out;
+    padding-bottom: 40px;
 }
 
 
-@keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(80%);
-    }
-    20% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
   #aboutDescription {
-    font-size: 28pt;
+    font-size: 24pt;
     color: white;
     padding-top: 200px;
     position: relative;
@@ -307,19 +352,18 @@ nav{
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-50px);
     }
 }
 
 
-.contactHeader{
+#contactHeader{
     color:#DBDADA;
     text-align: center;
-    font-size: 60pt;
+    font-size: 50pt;
     padding-left: 40px;
     font-family: 'Monckeberg';
 }
-
 
 .contactsSection{
     display: flex;

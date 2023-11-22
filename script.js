@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var mySwiper = new Swiper('.swiper-container', {
         loop: true, /* Enable looping */
         slidesPerView: 'auto',
-        speed: 12500,
+        speed: 8500,
         autoplay:{
             delay: 0,
             disableOnInteraction: false,
