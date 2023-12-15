@@ -1,0 +1,65 @@
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background-color: #0B090A;
+    z-index: 1; /* Ensure the dropdown is above other elements */
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Monckeberg';
+    text-align: center;
+}
+
+.mobile-menu a:hover {
+    background-color: #353232;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 20px; /* Adjust this value to position it on the right */
+    z-index: 2;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #DBDADA;
+    margin: 6px 0;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    
+    .navLinks {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-open .navLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 80px; /* Adjust this value based on your header height */
+        right: 0;
+        width: 100%;
+        background-color: #0B090A; /* Adjust the background color */
+        padding-top: 20px; /* Add padding as needed */
+    }
+
+    /* Add more mobile-specific styles as needed */
+}

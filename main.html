@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./mainStyle.css">
+    <link rel="stylesheet" href="./mobile.css">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -15,12 +16,25 @@
 <body>
     <div class="header">
         <nav class="navBar">
-            <a class="navElement" id="homeNav" href="#homeSection"> Home  <span class="red-bar"></span></a>
-            <a class="navElement" id="servicesNav" href="#servicesSection"> Services  <span class="red-bar"></span></a>
             <img id="mainNavImg" src="./Images/BOTTOMS UP OG.png" alt="Main Logo">
-            <a class="navElement" id="aboutNav" href="#aboutSection"> About  <span class="red-bar"></span></a>
-            <a class="navElement" id="contactNav" href="#contactsSection"> Contact  <span class="red-bar"></span></a>
-            
+            <div class="navLinks">
+                <a class="navElement" id="homeNav" href="#homeSection">Home<span class="red-bar"></span></a>
+                <a class="navElement" id="servicesNav" href="#servicesSection">Services<span class="red-bar"></span></a>
+                <a class="navElement" id="aboutNav" href="#aboutSection">About<span class="red-bar"></span></a>
+                <a class="navElement" id="contactNav" href="#contactsSection">Contact<span class="red-bar"></span></a>
+            </div>
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+                <img  id="martiniImage" src="Images\BOTTOMS UP Martini1.png" alt="Dropdown Icon">
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#homeSection">Home</a>
+            <a href="#servicesSection">Services</a>
+            <a href="#aboutSection">About</a>
+            <a href="#contactsSection">Contact</a>
+        </div>
+    </div>
         </nav>
     </div>
 
@@ -32,9 +46,7 @@
         <span id="homeSlogan"> Sip, Savor, Celebrate!</span>
     </div>
 
-    <div class="services">
-        <img class="martini" src="Images\BOTTOMS UP Martini1.png" alt="Martini from logo">
-        <div id="servicesSection"></div>
+    <div class="servicesText">
          <h2 class="hidden" id="serviceHeader" > Our Services </h2>
          <p class="hidden" id="servicesItalics"> Professional Event Staffing and Mobile Bar Services </p>
         <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.

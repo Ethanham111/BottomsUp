@@ -9,6 +9,22 @@
     transform: translateX(0);
 }
 
+#serviceHeader::after,
+#contactHeader::after,
+#testHeader::after {
+    content: "";
+    display: block;
+    width: 200px; /* Adjust the width of the bar */
+    height: 3px; /* Adjust the height and thickness of the bar */
+    background-color: #DBDADA; /* Adjust the color of the bar */
+    position: absolute;
+    bottom: -5px; /* Adjust the distance between the text and the bar */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
 
 @font-face {
     font-family: 'Monckeberg';
@@ -44,24 +60,27 @@ body{
     display: flex;
 }
 
-.navBar{
+.navBar {
     position: sticky;
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Adjust the space between logo and links */
     padding: 15px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+    background-color: #0B090A;
 }
 
-.navElement{
+.navLinks {
+    display: flex;
+}
+
+.navElement {
     color: white;
     font-size: 18pt;
-    padding-top: 5px;
     font-family: 'Monckeberg';
     text-decoration: none;
     position: relative;
-    margin: 0 137px; /* Adjust the margin to add space between elements */
+    margin: 0 45px; /* Adjust the margin to add space between elements */
+    display: inline-block; /* Use display:inline-block to respect margin */
 }
 
 .red-bar {
@@ -69,35 +88,39 @@ body{
     bottom: 0;
     height: 4px; /* Adjust the height of the red bar */
     background-color: red;
-    width: 0; /* Initial width is 0 */
-    transition: width 0.3s ease; /* Removed left property from transition */
-    left: 0; /* Start from the left edge of the anchor */
+    width: 0;
+    transition: width 0.3s ease;
+    left: 0;
 }
 
 .navElement:hover .red-bar,
 .navElement.active .red-bar {
-    width: 100%; /* Expand the red bar to full width on hover or for the active link */
+    width: 100%;
+    left: 0;
 }
 
-#mainNavImg{
-    display: inline;
-    height: 150px;
-    padding-left: 70px;
-    padding-top: 30px;
+#mainNavImg {
+    height: 125px; /* Adjust the height of the logo */
+    padding-top: 25px;
+}
+
+.homeSection{
+    display: flex;
+    
 }
 
 #homeSlogan {
     display: flex;
     height: 120px;
-    padding-top: 55px;
+    padding-top: 45px;
     justify-content: center;
     color: white;
     font-family: 'Monckeberg';
-    font-size: 70pt;
+    font-size: 5vw;
     font-weight: 1000;
     white-space: nowrap;
     opacity: 1; 
-    animation: fadeInSlogan 3s ease forwards; 
+    animation: fadeInSlogan 4s ease forwards; 
 }
 
 @keyframes fadeInSlogan {
@@ -109,141 +132,43 @@ body{
     }
 }
 
-#homeSlogan .slogan-line {
-    margin-right: 260px;
-    margin-left: 260px;;
-
-}
-
-.homeimgs{
-    animation: fadeInAnimation ease 7s;
-    animation-iteration-count: 1;
-}
-
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
 
 #homeimg1{
-    height: 700px;
-    width: 50%;
+    height: auto;
+    max-width: 50%;
     float: left;
 }
 
 #homeimg2{
-    height: 700px;
-    width: 50%;
+    height: auto;
+    max-width: 50%;
     float: right;
 }
 
-.TestimonalsContainer{
+
+.servicesText{
+    padding-top: 500px;
     text-align: center;
-    padding-top: 130px; /* Adjust the value to add more space */
-    padding-bottom: 20px; /* Adjust the value to add more space */
-}
 
-.counterImg{
-    width: 50%;
-}
-
-#testHeader{
-    position: relative;
-    color:#DBDADA;
-    font-size: 50pt;
-    text-align: center;
-    font-family: 'Monckeberg';
-}
-
-#testHeader::after{
-    content: "";
-    display: block;
-    width: 200px; /* Adjust the width of the bar */
-    height: 3px; /* Adjust the height and thickness of the bar */
-    background-color: #DBDADA; /* Adjust the color of the bar */
-    position: absolute;
-    bottom: -5px; /* Adjust the distance between the text and the bar */
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.Testimonials {
-    max-width: 400px; /* Adjust the maximum width of the testimonial section */
-    margin: auto; /* Center the testimonial section */
-}
-
-.swiper-container{
-    overflow: hidden;
-    width: auto; /* Set your desired fixed width */
-    height: 175px; /* Set your desired fixed height */
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 24pt;
-    background-color: #353232;; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    color: #DBDADA;
-    font-family: 'Monckeberg Light';
-    
-}
-
-.testimonial-author {
-    font-style: italic;
-    color: #E5383B;
-    margin-top: 10px;
-    font-family: 'Monckeberg Light';
-}
-
-.servicesSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.martini{
-    width: 65px;
-    padding-top: 70px;
-    padding-left: 48.5%;
 }
 
 #serviceHeader{
-    position: relative;
-    color:#DBDADA;
-    font-size: 50pt;
-    padding-left: 20px;
-    text-align: center;
+    color: #DBDADA;
+    font-size: 5em;
     font-family: 'Monckeberg';
 }
 
-#serviceHeader::after {
-    content: "";
-    display: block;
-    width: 200px; /* Adjust the width of the bar */
-    height: 3px; /* Adjust the height and thickness of the bar */
-    background-color: #DBDADA; /* Adjust the color of the bar */
-    position: absolute;
-    bottom: -5px; /* Adjust the distance between the text and the bar */
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 #servicesItalics{
     color: white;
-    text-align: center;
-    font-size: 24pt;
+    font-size: 3em;
     font-family: 'Monckeberg Light';
     font-style: italic;
 }
 
 #servicesParagraph{
     color: white;
-    text-align: center;
-    font-size: 20pt;
+    font-size: 2em;
     font-family: 'Monckeberg Light';
     max-width: 70%;
     padding-left: 14%;
@@ -263,7 +188,6 @@ body{
     transition: .5s ease;
     border-style: solid;
     border-color: black;
-    border-radius: 50px;
     border-width: 5;
 }
 
@@ -304,15 +228,74 @@ body{
     text-align: center;
  }
 
+ .TestimonalsContainer{
+    text-align: center;
+    padding-top: 130px; /* Adjust the value to add more space */
+    padding-bottom: 20px; /* Adjust the value to add more space */
+}
+
+.counterImg{
+    width: 50%;
+}
+
+#testHeader{
+    position: relative;
+    color:#DBDADA;
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Monckeberg';
+}
+
+
+.Testimonials {
+    max-width: 400px; /* Adjust the maximum width of the testimonial section */
+    margin: auto; /* Center the testimonial section */
+}
+
+.swiper-container{
+    overflow: hidden;
+    width: auto; /* Set your desired fixed width */
+    height: 175px; /* Set your desired fixed height */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 24pt;
+    background-color: #353232;; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    color: #DBDADA;
+    font-family: 'Monckeberg Light';
+    
+}
+
+.testimonial-author {
+    font-style: italic;
+    color: #E5383B;
+    margin-top: 10px;
+    font-family: 'Monckeberg Light';
+}
+
 
  .aboutUsHeader{
     color:#DBDADA;
-    font-size: 50pt;
+    font-size: 5em;
     padding-left: 160px;
     padding-top: 150px;
     margin-bottom: 0;
     font-family: 'Monckeberg';
+    position: relative;
 
+}
+
+.aboutUsHeader::after {
+    content: "";
+    display: block;
+    width: 200px; 
+    height: 3px; 
+    background-color: #DBDADA; 
+    position: absolute;
+    left: 16.5%;
+    transform: translateX(-50%);
 }
 
 
@@ -326,7 +309,7 @@ body{
 
 
 .foundersPic{
-    width: 550px;
+    max-width: 30%;
     order: 1;
     padding-right: 100px;
     padding-bottom: 40px;
@@ -338,13 +321,13 @@ body{
     color: white;
     padding-top: 200px;
     position: relative;
-    max-width: 900px; /* Adjust the maximum width of the bubble */
-    margin: auto; /* Center the bubble */
-    padding: 30px; /* Padding inside the bubble */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-    border-radius: 50px; /* Rounded corners for the bubble */
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1); /* Shadow for the bubble */
-    animation: floatBubble 2s infinite alternate; /* Bubble floating animation */
+    max-width: 900px; 
+    margin: auto; 
+    padding: 30px; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 50px; 
+    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1); 
+    animation: floatBubble 2s infinite alternate; 
 }
 
 @keyframes floatBubble {
@@ -360,9 +343,9 @@ body{
 #contactHeader{
     color:#DBDADA;
     text-align: center;
-    font-size: 50pt;
-    padding-left: 40px;
+    font-size: 5em;
     font-family: 'Monckeberg';
+    position: relative;
 }
 
 .contactsSection{
@@ -414,8 +397,8 @@ body{
 
 .callDiv:hover,
 .socialDiv:hover {
-    width: 250px; /* Adjust the expanded width */
-    height: 350px; /* Adjust the expanded height */
+    width: 250px; 
+    height: 350px; 
 }
 
 .emailDiv{
@@ -424,8 +407,8 @@ body{
 
 .emailDiv:hover{
 
-    width: 350px; /* Adjust the expanded width */
-    height: 350px; /* Adjust the expanded height */
+    width: 350px; 
+    height: 350px; 
 }
 
 

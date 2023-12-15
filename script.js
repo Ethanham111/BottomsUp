@@ -40,3 +40,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.querySelector('.mobile-menu-icon').addEventListener('click', function () {
+    document.querySelector('.navBar').classList.toggle('mobile-menu-open');
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var martiniImage = document.getElementById('martiniImage');
+    var rotated = false;
+
+    martiniImage.addEventListener('click', function () {
+        if (rotated) {
+            martiniImage.style.transform = 'rotate(0deg)';
+        } else {
+            martiniImage.style.transform = 'rotate(90deg)';
+        }
+
+        rotated = !rotated; // Toggle the rotation state
+    });
+});
