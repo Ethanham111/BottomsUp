@@ -1,7 +1,7 @@
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100px;
     right: 0;
     width: 100%;
     background-color: #0B090A;
@@ -10,11 +10,9 @@
 
 .mobile-menu a {
     display: block;
-    padding: 15px;
     color: white;
     text-decoration: none;
     font-family: 'Monckeberg';
-    text-align: center;
 }
 
 .mobile-menu a:hover {
@@ -29,18 +27,51 @@
     z-index: 2;
 }
 
-.bar {
-    width: 25px;
-    height: 3px;
-    background-color: #DBDADA;
-    margin: 6px 0;
-}
-
-
-
 
 @media only screen and (max-width: 768px) {
+
+
+    #homeSlogan {
+        font-size: 6vh;
+    }
+
+
+    #serviceHeader {
+        font-size: 3em; /* Remove any existing margin */
+    }
+
+    #aboutSection,
+    #contactHeader,
+    #testHeader {
+        font-size: 3em; /* Adjust font size for other headers as needed */
+    }
+
+    /* Adjust font size for paragraphs */
+    #servicesItalics,
+    #aboutDescription,
+    .servicesText p,
+    .contactsSection p,
+    .Testimonals p {
+        font-size: 1.5em;
+    }
+
+    #servicesParagraph {
+        font-size: 1.2em;
+    }
     
+
+    .swiper-slide {
+        font-size: 10pt;
+    }
+
+    .swiper-container {
+        height: 120px; /* Adjust the height as needed */
+    }
+
+    .foundersPic{
+        max-width: 70%;
+    }
+
     .navLinks {
         display: none;
     }
@@ -61,5 +92,57 @@
         padding-top: 20px; /* Add padding as needed */
     }
 
-    /* Add more mobile-specific styles as needed */
+    .servicesText {
+        padding-top: 20px; /* Adjust or remove the padding for smaller screens */
+    }
+
+    .contactsSection {
+        flex-direction: row;
+    }
+
+    /* Adjust styles for individual contact boxes on mobile */
+    .callDiv,
+    .emailDiv,
+    .socialDiv {
+        width: 50%; /* Make the width 100% for mobile screens */
+        height: 50%; /* Ensure the height matches the width for a circular shape */
+        margin: 30px 0; /* Adjust margin for better spacing on mobile */
+        border-radius: 50%; /* Make the boxes circular */
+        overflow: hidden; /* Ensure content stays within the circular shape */
+        transition: width 0.3s ease, height 0.3s ease;
+    }
+
+    .callDiv:hover,
+    .socialDiv:hover {
+        width: 60%; /* Expand the width a little on hover */
+        height: 60%; /* Expand the height a little on hover */
+}
+
+.emailDiv:hover {
+    width: 60%; /* Expand the width a little on hover */
+    height: 60%; /* Expand the height a little on hover */
+}
+
+    .callUs,
+    .emailUs{
+        font-size: 4vw;
+    }
+
+    /* Adjust styles for logo images inside circular contact boxes */
+    .callDiv img,
+    .emailDiv img {
+        width: 80%; /* Make the logo image fill the circular container */
+        height: 80%; /* Maintain aspect ratio */
+    }
+    
+    
+    .socialDiv img {
+        max-width: 65%;
+        padding-left: 10px;
+    }
+
+    /* Adjust styles for text under the circular contact boxes */
+    .phoneNumber, .email {
+        display: none; /* Hide the phone number and email text */
+    }
 }

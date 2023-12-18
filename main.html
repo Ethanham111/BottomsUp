@@ -35,8 +35,6 @@
             <a href="#contactsSection">Contact</a>
         </div>
     </div>
-        </nav>
-    </div>
 
     <div class="HomeSection" id="homeSection">
         <img class="homeimgs" id="homeimg1" src="/Images/pexels-dmitry-zvolskiy-1721939.jpg"
@@ -46,8 +44,8 @@
         <span id="homeSlogan"> Sip, Savor, Celebrate!</span>
     </div>
 
+    <h2 class="hidden" id="serviceHeader" > Our Services </h2>
     <div class="servicesText">
-         <h2 class="hidden" id="serviceHeader" > Our Services </h2>
          <p class="hidden" id="servicesItalics"> Professional Event Staffing and Mobile Bar Services </p>
         <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
             Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and
@@ -112,22 +110,22 @@
         </p>
     </div>
 
-    <h2 id="contactHeader"> Contact Us </h2>
+    <h2 id="contactHeader"> Contact Information </h2>
     <div class="contactsSection" id="contactsSection">
-        <div class="callDiv">
+        <div class="callDiv" onclick="copyPhoneNumber()">
             <img src="./Images/call.png" alt="Phone icon">
             <h2 class="callUs"> Call us </h2>
             <a class="phoneNumber"> 438-926-6733 </a>
         </div>
-        <div class="emailDiv">
+        <div class="emailDiv" onclick="copyEmailAddress()">
             <img src="./Images/email.png" alt="Letter icon">
             <h2 class="emailUs"> Email us</h2>
             <a class="email"> mtlham45@gmail.com </a>
         </div>
-        <div class="socialDiv">
+        <div class="socialDiv" onclick="redirectToInstagram()">
             <img id='instaPhoto' src="./Images/instagram.png" alt="Phone icon">
             <h2 class="callUs">Instagram</h2>
-            <a class="phoneNumber" href="https://www.instagram.com/bottomsupbar/"> @BottomsUp</a>
+            <a class="phoneNumber"> @BottomsUp</a>
         </div>
 
     </div>

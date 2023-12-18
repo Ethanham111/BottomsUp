@@ -116,7 +116,7 @@ body{
     justify-content: center;
     color: white;
     font-family: 'Monckeberg';
-    font-size: 5vw;
+    font-size: 6vw;
     font-weight: 1000;
     white-space: nowrap;
     opacity: 1; 
@@ -147,15 +147,16 @@ body{
 
 
 .servicesText{
-    padding-top: 500px;
     text-align: center;
 
 }
 
 #serviceHeader{
     color: #DBDADA;
+    text-align: center;
     font-size: 5em;
     font-family: 'Monckeberg';
+    padding-top: 25%;
 }
 
 
@@ -188,6 +189,7 @@ body{
     transition: .5s ease;
     border-style: solid;
     border-color: black;
+    border-radius: 10px;
     border-width: 5;
 }
 
@@ -276,15 +278,12 @@ body{
 }
 
 
- .aboutUsHeader{
-    color:#DBDADA;
-    font-size: 5em;
-    padding-left: 160px;
-    padding-top: 150px;
-    margin-bottom: 0;
+.aboutUsHeader {
+    color: #DBDADA;
+    font-size: 4em; /* Adjust the font size as needed */
+    text-align: center;
     font-family: 'Monckeberg';
     position: relative;
-
 }
 
 .aboutUsHeader::after {
@@ -293,41 +292,34 @@ body{
     width: 200px; 
     height: 3px; 
     background-color: #DBDADA; 
-    position: absolute;
-    left: 16.5%;
+    position: relative;
+    left: 50%;
     transform: translateX(-50%);
 }
 
 
-.aboutSection{
+.aboutSection {
     display: flex;
-    gap: 20px;
-    text-align: left;
-    margin-bottom: 200px;
-    font-family: 'Monckeberg Light';
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px; /* Adjust margin as needed for spacing */
 }
 
 
-.foundersPic{
-    max-width: 30%;
-    order: 1;
-    padding-right: 100px;
-    padding-bottom: 40px;
+.foundersPic {
+    max-width: 45%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    border-radius: 10px; /* Add border-radius for rounded corners */
 }
 
 
-  #aboutDescription {
-    font-size: 24pt;
+#aboutDescription {
+    font-size: 2em; /* Adjust the font size as needed */
     color: white;
-    padding-top: 200px;
-    position: relative;
-    max-width: 900px; 
-    margin: auto; 
-    padding: 30px; 
-    background-color: rgba(255, 255, 255, 0.1); 
-    border-radius: 50px; 
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.1); 
-    animation: floatBubble 2s infinite alternate; 
+    max-width: 800px; /* Set a maximum width for better readability */
+    margin-top: 20px; /* Adjust margin as needed for spacing */
+    font-family: 'Monckeberg Light';
 }
 
 @keyframes floatBubble {
@@ -340,77 +332,61 @@ body{
 }
 
 
-#contactHeader{
-    color:#DBDADA;
+#contactHeader {
+    color: #DBDADA;
     text-align: center;
     font-size: 5em;
     font-family: 'Monckeberg';
     position: relative;
 }
 
-.contactsSection{
+.contactsSection {
     display: flex;
-    gap: 100px;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
     font-size: 18pt;
     margin-bottom: 100px;
-    padding-left: 50px;
     font-family: 'Monckeberg Light';
 }
 
-.emailDiv{
-    background-color: #353232;
-    padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-}
-
-.callDiv{
-    background-color: #353232;
-    padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-}
-
-#instaPhoto{
-    width: 160px;
-    padding-left: 15px;
-}
-
-.socialDiv{
-    background-color: #353232;
-    padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-}
-
+.emailDiv,
 .callDiv,
 .socialDiv {
+    background-color: #353232;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 0 20px; /* Add space between the divs */
+}
+
+/* Transitions for smoother hover effects */
+.callDiv,
+.socialDiv,
+.emailDiv {
     transition: width 0.3s ease, height 0.3s ease;
 }
 
+/* Hover effects */
 .callDiv:hover,
 .socialDiv:hover {
-    width: 250px; 
-    height: 350px; 
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
 }
 
-.emailDiv{
-    transition: width 0.3s ease, height 0.3s ease;
+.emailDiv:hover {
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
 }
 
-.emailDiv:hover{
-
-    width: 350px; 
-    height: 350px; 
+#instaPhoto {
+    width: 165px; /* Adjust the size as needed */
+    height: auto;
 }
-
 
 footer {
     display: flex;

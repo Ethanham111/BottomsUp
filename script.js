@@ -45,7 +45,7 @@ document.querySelector('.mobile-menu-icon').addEventListener('click', function (
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var martiniImage = document.getElementById('martiniImage');
+    const martiniImage = document.getElementById('martiniImage');
     var rotated = false;
 
     martiniImage.addEventListener('click', function () {
@@ -55,6 +55,44 @@ document.addEventListener('DOMContentLoaded', function () {
             martiniImage.style.transform = 'rotate(90deg)';
         }
 
-        rotated = !rotated; // Toggle the rotation state
+        rotated = !rotated; 
     });
 });
+
+
+function copyPhoneNumber() {
+    // Get the phone number text
+    const phoneNumber = document.querySelector('.phoneNumber').innerText.trim();
+
+    // Create a dummy input element to copy the text
+    const dummyInput = document.createElement('input');
+    document.body.appendChild(dummyInput);
+    dummyInput.value = phoneNumber;
+    dummyInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummyInput);
+
+    // You can provide feedback to the user that the phone number has been copied if needed
+    alert('Phone number copied to clipboard: ' + phoneNumber);
+}
+
+function copyEmailAddress() {
+    // Get the email address text
+    const emailAddress = document.querySelector('.email').innerText.trim();
+
+    // Create a dummy input element to copy the text
+    const dummyInput = document.createElement('input');
+    document.body.appendChild(dummyInput);
+    dummyInput.value = emailAddress;
+    dummyInput.select();
+    document.execCommand('copy');
+    document.body.removeChild(dummyInput);
+
+    // You can provide feedback to the user that the email address has been copied if needed
+    alert('Email address copied to clipboard: ' + emailAddress);
+}
+
+function redirectToInstagram() {
+    // Redirect the user to the Instagram page
+    window.location.href = 'https://www.instagram.com/bottomsupbar/';
+}
