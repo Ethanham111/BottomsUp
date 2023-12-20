@@ -16,7 +16,7 @@
     display: block;
     width: 200px; /* Adjust the width of the bar */
     height: 3px; /* Adjust the height and thickness of the bar */
-    background-color: #DBDADA; /* Adjust the color of the bar */
+    background-color: #E5383B; /* Adjust the color of the bar */
     position: absolute;
     bottom: -5px; /* Adjust the distance between the text and the bar */
     left: 50%;
@@ -49,10 +49,9 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgb(57,52,52);
-    background: linear-gradient(90deg, rgba(57,52,52,1) 65%, rgba(22,26,29,1) 100%);
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23595959' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
-
 .header{
     height: 80px;
     width: 100%;
@@ -112,11 +111,11 @@ body{
 #homeSlogan {
     display: flex;
     height: 120px;
-    padding-top: 45px;
+    padding-top: 5px;
     justify-content: center;
     color: white;
     font-family: 'Monckeberg';
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: 1000;
     white-space: nowrap;
     opacity: 1; 
@@ -145,6 +144,25 @@ body{
     float: right;
 }
 
+#martiniImage{
+    vertical-align: middle;
+}
+
+#glassesContainer {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;
+    height: 65vh; /* Adjust height as needed */
+    padding: 10px; /* Adjust padding as needed */
+    width: 100%;
+    margin: 0;
+}
+
+.glasses-img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto;
+    margin: 0 55px; /* Adjust margin between images */
+}
 
 .servicesText{
     text-align: center;
@@ -156,7 +174,6 @@ body{
     text-align: center;
     font-size: 5em;
     font-family: 'Monckeberg';
-    padding-top: 25%;
 }
 
 
@@ -173,6 +190,7 @@ body{
     font-family: 'Monckeberg Light';
     max-width: 70%;
     padding-left: 14%;
+    padding-bottom: 5%;
 }
 
 .servicesContainer{
@@ -219,6 +237,11 @@ body{
 
     .servicesDivs:hover .overlay-box {
         opacity: 1;
+}
+
+/* Hide on larger screens */
+.serviceDescriptionMobile {
+    display: none;
 }
 
  .serviceDescription{
@@ -291,7 +314,7 @@ body{
     display: block;
     width: 200px; 
     height: 3px; 
-    background-color: #DBDADA; 
+    background-color: #E5383B;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -320,6 +343,7 @@ body{
     max-width: 800px; /* Set a maximum width for better readability */
     margin-top: 20px; /* Adjust margin as needed for spacing */
     font-family: 'Monckeberg Light';
+    padding-bottom: 5%;
 }
 
 @keyframes floatBubble {

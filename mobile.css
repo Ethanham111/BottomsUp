@@ -31,19 +31,37 @@
 @media only screen and (max-width: 768px) {
 
 
+    #mainNavImg{
+        max-height: 100px;
+    }
+
+    #martiniImage{
+        max-height: 40px;
+    }
+
+    .glasses-img{
+        max-width: 40%;
+    }
+
+    .logo{
+        max-width: 40%;
+    }
+
+
     #homeSlogan {
-        font-size: 6vh;
+        font-size: 8vw;
     }
 
 
     #serviceHeader {
-        font-size: 3em; /* Remove any existing margin */
+        font-size: 4vh; /* Remove any existing margin */
+        z-index: 0;
     }
 
     #aboutSection,
     #contactHeader,
     #testHeader {
-        font-size: 3em; /* Adjust font size for other headers as needed */
+        font-size: 5vh; /* Adjust font size for other headers as needed */
     }
 
     /* Adjust font size for paragraphs */
@@ -52,11 +70,19 @@
     .servicesText p,
     .contactsSection p,
     .Testimonals p {
-        font-size: 1.5em;
+        font-size: 3vh;
     }
 
     #servicesParagraph {
-        font-size: 1.2em;
+        font-size: 3vh;
+    }
+
+    #Copyright{
+        font-size: 1.2vh;
+    }
+
+    #websiteDev{
+        font-size: 1.2vh;
     }
     
 
@@ -70,6 +96,43 @@
 
     .foundersPic{
         max-width: 70%;
+    }
+
+    .serviceImg{
+        max-height: 300px;
+    }
+
+    .servicesDivs {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .overlay-box {
+        display: none;
+    }
+    
+    .serviceDescription {
+        display: none;
+    }
+
+    .serviceDescriptionMobile {
+        display: block; /* Make it visible on mobile */
+        color: white;
+        font-size: 3vh; /* Adjust font size as needed */
+        font-family: 'Monckeberg';
+        padding-left: 20px;
+        position: absolute;
+        overflow: hidden;
+        z-index: 1; /* Ensure it's above the image */
+    }
+
+    /* Remove hover styles */
+    .servicesDivs:hover .serviceImg {
+        opacity: 1;
+    }
+
+    .servicesDivs:hover .overlay-box {
+        opacity: 1;
     }
 
     .navLinks {
