@@ -30,6 +30,9 @@
 
 @media only screen and (max-width: 768px) {
 
+    #martiniRow{
+        padding-bottom: 25%;
+    }
 
     #mainNavImg{
         max-height: 100px;
@@ -54,7 +57,7 @@
 
 
     #serviceHeader {
-        font-size: 4vh; /* Remove any existing margin */
+        font-size: 5vh; /* Remove any existing margin */
         z-index: 0;
     }
 
@@ -95,7 +98,17 @@
     }
 
     .foundersPic{
-        max-width: 70%;
+        max-width: 50%;
+        padding-right: 20px;
+    }
+
+
+    #serviceHeader::after,
+    #contactHeader::after,
+    #testHeader::after,
+    .aboutUsHeader::after {
+        width: 100px; /* Adjust the width for smaller screens */
+        height: 2px; /* Adjust the height for smaller screens */
     }
 
     .serviceImg{
@@ -133,6 +146,10 @@
 
     .servicesDivs:hover .overlay-box {
         opacity: 1;
+    }
+
+    .testimonial-author{
+        display: none;
     }
 
     .navLinks {
@@ -194,14 +211,13 @@
     /* Adjust styles for logo images inside circular contact boxes */
     .callDiv img,
     .emailDiv img {
-        width: 80%; /* Make the logo image fill the circular container */
-        height: 80%; /* Maintain aspect ratio */
+        width: 50%; /* Make the logo image fill the circular container */
+        height: 50%; /* Maintain aspect ratio */
     }
     
     
     .socialDiv img {
-        max-width: 65%;
-        padding-left: 10px;
+        max-width: 40%;
     }
 
     /* Adjust styles for text under the circular contact boxes */
