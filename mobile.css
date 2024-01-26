@@ -30,8 +30,12 @@
 
 @media only screen and (max-width: 768px) {
 
-    #martiniRow{
-        padding-bottom: 25%;
+    .martiniRow{
+        max-width: 20%;
+    }
+
+    #glassesContainer{
+        height: 25vh;
     }
 
     #mainNavImg{
@@ -73,22 +77,22 @@
     .servicesText p,
     .contactsSection p,
     .Testimonals p {
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     #servicesParagraph {
-        font-size: 3vh;
+        font-size: 2vh;
+        max-width: 500px;
     }
 
     #Copyright{
-        font-size: 1.2vh;
+        font-size: 1.5vh;
     }
 
     #websiteDev{
-        font-size: 1.2vh;
+        font-size: 1.5vh;
     }
     
-
     .swiper-slide {
         font-size: 10pt;
     }
@@ -115,6 +119,10 @@
         max-height: 300px;
     }
 
+    #shaking{
+        display: none;
+    }
+
     .servicesDivs {
         position: relative;
         overflow: hidden;
@@ -129,17 +137,25 @@
     }
 
     .serviceDescriptionMobile {
-        display: block; /* Make it visible on mobile */
+        display: block; 
         color: white;
-        font-size: 3vh; /* Adjust font size as needed */
+        font-size: 3vh; 
         font-family: 'Monckeberg';
         padding-left: 20px;
         position: absolute;
         overflow: hidden;
-        z-index: 1; /* Ensure it's above the image */
+        z-index: 1; 
     }
 
-    /* Remove hover styles */
+    #aboutDescription {
+        max-width: 500px; 
+        padding-top: 25px;
+    }
+
+    .aboutSection{
+        flex-direction: column;
+    }
+
     .servicesDivs:hover .serviceImg {
         opacity: 1;
     }
@@ -171,6 +187,11 @@
         background-color: #0B090A; /* Adjust the background color */
         padding-top: 20px; /* Add padding as needed */
     }
+
+    .serviceDescription,.TestimonalsContainer, .aboutSection{
+        padding-bottom: 3%;
+    }
+    
 
     .servicesText {
         padding-top: 20px; /* Adjust or remove the padding for smaller screens */
