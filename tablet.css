@@ -1,0 +1,70 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+
+    .navElement {
+        font-size: 20pt; /* Slightly smaller font size */
+        margin: 0 20px; /* Reduce margin between links */
+    }
+
+    #mainNavImg {
+        height: 100px; /* Adjust logo size for tablets */
+        padding-top: 15px;
+    }
+
+    .homeSection, .aboutSection {
+        flex-direction: column; /* Stack elements vertically on tablets */
+        align-items: center;
+    }
+
+    .homeimgs, #homeimg1, #homeimg2 {
+        max-width: 80%; /* Increase width for better visibility on tablets */
+        margin-bottom: 20px; /* Add some space below each image */
+    }
+
+    #homeSlogan {
+        font-size: 4vw; /* Adjust slogan size for tablets */
+    }
+
+    .servicesContainer, .contactsSection {
+        flex-direction: column; /* Stack services and contact info vertically */
+    }
+
+    .serviceImg, #shaking {
+        height: auto; /* Adjust image height automatically */
+        max-width: 60%; /* Make images wider on tablets */
+
+    }
+
+    .servicesDivs .overlay-box {
+        padding: 10px; /* Adjust padding for overlay text */
+    }
+
+    .servicesText, #servicesParagraph {
+        max-width: 90%; /* Adjust text width for better readability */
+    }
+
+    #aboutDescription, .testimonial-author, .comments {
+        font-size: 1.5em; /* Adjust text size for readability */
+    }
+
+    .foundersPic {
+        max-width: 50%; /* Adjust founder picture size on tablets */
+    }
+
+    .emailDiv, .callDiv, .socialDiv {
+        flex-direction: row; /* Align contact methods horizontally */
+        justify-content: space-around;
+        width: 100%; /* Use full width for each contact method */
+        padding: 10px; /* Adjust padding */
+    }
+    
+    footer {
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center;
+    }
+
+    #websiteDev {
+        text-align: center;
+        padding: 10px 0; /* Adjust padding */
+    }
+}

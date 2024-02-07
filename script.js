@@ -40,22 +40,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.querySelector('.mobile-menu-icon').addEventListener('click', function () {
-    document.querySelector('.navBar').classList.toggle('mobile-menu-open');
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const martiniImage = document.getElementById('martiniImage');
+    const dropdownMenu = document.getElementById('dropdownMenu');
     var rotated = false;
 
     martiniImage.addEventListener('click', function () {
-        if (rotated) {
-            martiniImage.style.transform = 'rotate(0deg)';
-        } else {
-            martiniImage.style.transform = 'rotate(90deg)';
-        }
+        toggleDropdown();
+    });
 
-        rotated = !rotated; 
+    function toggleDropdown() {
+        if (dropdownMenu.style.display === "block") {
+            dropdownMenu.style.display = "none";
+            martiniImage.style.transform = 'rotate(0deg)';
+            rotated = false;
+        } else {
+            dropdownMenu.style.display = "block";
+            martiniImage.style.transform = 'rotate(90deg)';
+            rotated = true;
+        }
+    }
+
+    // Close the dropdown and rotate the martini image back if any menu item is clicked
+    document.querySelectorAll('.mobile-menu a').forEach(item => {
+        item.addEventListener('click', () => {
+            dropdownMenu.style.display = "none";
+            martiniImage.style.transform = 'rotate(0deg)';
+            rotated = false;
+        });
     });
 });
 

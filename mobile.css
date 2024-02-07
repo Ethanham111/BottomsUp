@@ -1,41 +1,43 @@
 .mobile-menu {
     display: none;
     position: absolute;
-    top: 100px;
-    right: 0;
+    top: 80px; /* Adjust based on your mobile menu icon's size and position */
     width: 100%;
-    background-color: #0B090A;
-    z-index: 1; /* Ensure the dropdown is above other elements */
+    background-color: #E5383B;
+    z-index: 9999; /* High z-index to ensure the dropdown is above other elements */
 }
 
 .mobile-menu a {
     display: block;
     color: white;
     text-decoration: none;
-    font-family: 'Monckeberg';
+    font-size: 3vh;
+    font-family: 'Monckeberg Light';
+    padding: 15px;
+    text-align: center;
 }
 
 .mobile-menu a:hover {
-    background-color: #353232;
+    background-color: #C84B31; /* Slightly darker for hover state */
 }
 
 .mobile-menu-icon {
-    display: none;
     cursor: pointer;
     position: fixed;
-    right: 20px; /* Adjust this value to position it on the right */
-    z-index: 2;
+    right: 20px;
+    top: 20px;
+    z-index: 10000; /* Even higher z-index to ensure the icon is above the dropdown */
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .martiniRow{
         max-width: 20%;
     }
 
     #glassesContainer{
-        height: 25vh;
+        height: 15vh;
     }
 
     #mainNavImg{
@@ -77,11 +79,11 @@
     .servicesText p,
     .contactsSection p,
     .Testimonals p {
-        font-size: 2vh;
+        font-size: 2.2vh;
     }
 
     #servicesParagraph {
-        font-size: 2vh;
+        font-size: 2.2vh;
         max-width: 500px;
     }
 
@@ -116,7 +118,7 @@
     }
 
     .serviceImg{
-        max-height: 300px;
+        max-height: 350px;
     }
 
     #shaking{
@@ -126,6 +128,7 @@
     .servicesDivs {
         position: relative;
         overflow: hidden;
+
     }
 
     .overlay-box {
@@ -139,12 +142,11 @@
     .serviceDescriptionMobile {
         display: block; 
         color: white;
-        font-size: 3vh; 
+        font-size: 2.6vh; 
         font-family: 'Monckeberg';
-        padding-left: 20px;
-        position: absolute;
         overflow: hidden;
-        z-index: 1; 
+        z-index: 2; /* Ensures the description is above the image */
+        text-align: center; /* Centers the text inside the block */
     }
 
     #aboutDescription {

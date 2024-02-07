@@ -22,16 +22,16 @@
                 <a class="navElement" id="aboutNav" href="#aboutSection">About<span class="red-bar"></span></a>
                 <a class="navElement" id="contactNav" href="#contactsSection">Contact<span class="red-bar"></span></a>
             </div>
-            <div class="mobile-menu-icon" onclick="toggleMobileMenu()">
+            <div class="mobile-menu-icon" onclick="toggleDropdown()">
                 <img  id="martiniImage" src="Images\BOTTOMS UP Martini1.png" alt="Dropdown Icon">
             </div>
         </nav>
         <!-- Mobile Menu -->
-        <div class="mobile-menu">
-            <a href="#homeSection">Home</a>
-            <a href="#servicesSection">Services</a>
-            <a href="#aboutSection">About</a>
-            <a href="#contactsSection">Contact</a>
+        <div class="mobile-menu" id ="dropdownMenu">
+            <a href="#homeSection" onclick="toggleDropdown()">Home</a>
+            <a href="#servicesSection" onclick="toggleDropdown()">Services</a>
+            <a href="#aboutSection" onclick="toggleDropdown()">About</a>
+            <a href="#contactsSection" onclick="toggleDropdown()">Contact</a>
         </div>
     </div>
 
@@ -51,7 +51,7 @@
     </div>
 
     <h2 class="hidden" id="serviceHeader" > Our Services </h2>
-    <div class="servicesText">
+    <div class="servicesText" id="servicesSection">
          <p class="hidden" id="servicesItalics"> Professional Event Staffing and Mobile Bar Services </p>
         <p class="hidden" id="servicesParagraph"> "Bottoms Up" offers the perfect solution for a wide range of events.
             Whether you're hosting a relaxed backyard barbecue or an elegant wedding reception, we provide a versatile and
@@ -77,7 +77,7 @@
                 <div class="serviceDescription"> Casual Events </div>
             </div>
             <div class="serviceDescriptionMobile">
-                <span> Casual Events</span>
+                <span>Casual Events</span>
             </div>
             <img class="serviceImg" src="./Images/20230904_184048.jpg" alt="Outdoor venue with mojito pitcher on display">
         </div>
